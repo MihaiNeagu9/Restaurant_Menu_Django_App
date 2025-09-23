@@ -13,6 +13,7 @@ STATUS = (
     (1, "Available")
 )
 
+
 class Item(models.Model):
     meal_type = models.CharField(max_length=1000, choices=MEAL_TYPE)
     meal = models.CharField(max_length=1000, unique=True)
